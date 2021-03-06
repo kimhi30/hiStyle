@@ -30,6 +30,9 @@
     padding-left:15px;
     list-style:none;
     }
+    #grid li {
+        padding:2px;
+    }
     #grid .bk {
     font-size:20px;
     font-weight:bold;
@@ -39,12 +42,30 @@
     #grid #article{
         padding-left: 25px;
     }
+    @media(max-width:800px){
+        #grid {
+        display: block;
+    }
+        #grid ul {
+            border-right:none;
+            border-bottom:1px solid gray;
+            padding-bottom:85px;
+            width:100%;
+        }
+        #grid .u2 {
+            float:left;
+        }
+        #grid li {
+            padding:2px;
+        }
+    }
  </style>
  </head>
 <body>
     <h1><a href="index.html">신학백과</a></h1>
  <div id="grid">
     <ul>
+       <div class="u2">
         <li class="bk"><a href="">사상</a></li>
         <li><a href="">성경주의</a></li>
         <li><a href="">칼빈주의</a></li>
@@ -57,7 +78,8 @@
         <li><a href="">인본주의</a></li>
         <li><a href="">포스트모더니즘</a></li>
         <li><a href="">마르크스주의</a></li>
-        <li class="bk"><a href="">인물탐구</a></li>
+       </div>  
+        <li class="bk"><a href="">인물탐구</a></li> 
         <li><a href="">아우구스티누스</a></li>
         <li><a href="">존 칼빈</a></li>
         <li><a href="">마르틴 루터</a></li>
